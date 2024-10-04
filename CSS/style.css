@@ -127,17 +127,17 @@ nav {
 
 /* section to --popular choice */
 
-.sec2 {
+.sec3 {
   padding: 7% 5%;
   text-align: center;
 }
 
-.sec2 h1 {
+.sec3 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 45px;
   color: rgb(40, 19, 4);
 }
-.sec2 .cardbox {
+.sec3 .cardbox {
   padding: 70px 0px;
   display: flex;
   align-items: center;
@@ -175,4 +175,55 @@ nav {
   margin-bottom: 15px;
   display: block;
   color: indianred;
+}
+
+/* sec4 */
+.sec4 {
+  /* padding: 3% 3%; */
+  text-align: center;
+  border: 1px solid rgba(170, 66, 18, 0.6);
+}
+
+.sec4 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 45px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  color: rgb(40, 19, 4);
+}
+
+.sec4 .video-container {
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 900px;
+  /* height: 700px; */
+}
+
+.video-container source {
+  padding: 80px 80px;
+  width: 100%;
+}
+
+/* sec5 */
+.sec5 {
+  padding: 5% 10%;
+  margin: 10% 0;
+  /* border: 1px solid rgba(170, 66, 18, 0.6); */
+}
+
+.newsletter {
+  background-color: #cf5858;
+  border-radius: 20px;
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newsletter img {
+  width: 20vw;
+  max-width: 450px;
+  margin-left: 10px;
 }
