@@ -186,44 +186,91 @@ nav {
 
 .sec4 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 45px;
+  font-size: 60px;
   padding-top: 10px;
   padding-bottom: 50px;
   color: rgb(40, 19, 4);
 }
 
 .sec4 .video-container {
-  padding: 20px 30px;
+  padding: 70px 50px;
   align-items: center;
   justify-content: space-evenly;
   width: 900px;
-  /* height: 700px; */
 }
 
-.video-container source {
-  padding: 80px 80px;
-  width: 100%;
-}
+/* .video-container source {
+  width: 50%;
+} */
 
 /* sec5 */
 .sec5 {
   padding: 5% 10%;
   margin: 10% 0;
-  /* border: 1px solid rgba(170, 66, 18, 0.6); */
 }
 
 .newsletter {
   background-color: #cf5858;
   border-radius: 20px;
-  min-height: 300px;
+  min-height: 350px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .newsletter img {
-  width: 20vw;
-  max-width: 450px;
-  margin-left: 10px;
+  width: 25vw;
+  max-width: 500px;
+}
+
+.newsletter .content {
+  width: 45vh;
+
+  padding: 5% 3%;
+}
+
+.newsletter .content h1 {
+  color: white;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 70%;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+.newsletter .content h2 {
+  color: rgb(43, 17, 17);
+  font-size: 45px;
+  font-family: cursive;
+}
+
+.newsletter .subscribe {
+  background-color: white;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.newsletter .subscribe input {
+  font-size: 13px;
+  width: 50%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.newsletter .subscribe button {
+  font-size: 10px;
+
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(43, 17, 17);
+  cursor: pointer;
 }
