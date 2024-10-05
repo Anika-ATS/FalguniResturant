@@ -1,39 +1,40 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* box-sizing: border-box; */
+
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   max-width: 1400px;
   /* overflow-x: hidden; */
 }
 
 nav {
   display: flex;
-  /* text-align: center; */
+
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 20vh;
-  background-color: transparent;
-  /* border: 1px solid black; */
+  background-color: rgb(255, 87, 87);
 }
 
 .NAV-part-1 a {
-  color: indianred;
+  color: rgb(40, 19, 4);
+  font-family: cursive;
   font-size: 18px;
   padding-right: 10px;
   transition: all 0.5s;
 }
 
 .NAV-part-1 a:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 .Nav-logo img {
-  max-width: 600px;
-  height: 20vh;
-  padding: 5px;
+  max-width: 650px;
+  height: 18vh;
+
+  border-radius: 80px;
 }
 
 .Nav-part-2 {
@@ -41,10 +42,10 @@ nav {
   gap: 20px;
 }
 .search {
-  color: indianred;
+  color: rgb(40, 19, 4);
   font-size: 18px;
   padding-right: 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid white;
   transition: all 0.5s;
 }
 
@@ -59,17 +60,24 @@ nav {
 
   transition: all 0.5s;
 }
+.Nav-part-2 .search input::placeholder {
+  color: whitesmoke;
+}
 
 .user i {
-  color: indianred;
+  color: rgb(40, 19, 4);
   padding: 5px;
   height: 20px;
 }
 .user-text {
-  color: indianred;
+  color: rgb(40, 19, 4);
   font-size: 20px;
+  font-family: cursive;
   padding-right: 10px;
   transition: all 0.5s;
+}
+.user-text:hover {
+  color: whitesmoke;
 }
 
 /* section 1 */
@@ -98,11 +106,12 @@ nav {
   margin-top: 90px;
   font-family: cursive;
   color: rgb(40, 19, 4);
+  font-size: 35px;
 }
 .content-homepage p {
   padding-left: 30px;
-  padding-top: 20px;
-  color: indianred;
+  padding-top: 25px;
+  color: rgb(255, 87, 87);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -115,7 +124,7 @@ nav {
   padding-bottom: 10px;
   width: 130px;
 
-  background-color: indianred;
+  background-color: rgb(255, 87, 87);
   color: white;
   display: inline-flex;
   border-radius: 50px;
@@ -127,10 +136,92 @@ nav {
   transform: translateX(20px);
 }
 
-/* section to --popular choice */
+/* section 2 about us */
+.sec2 {
+  padding: 3% 3%;
+  margin: 7% 0;
+}
+
+.About {
+  background-color: rgb(40, 19, 4);
+
+  border-radius: 20px;
+  min-height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.About .Acontent {
+  padding: 3% 3%;
+}
+
+.sec2 h1 {
+  font-size: 45px;
+  color: rgb(40, 19, 4);
+
+  padding-bottom: 35px;
+  text-align: center;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+.About .Acontent h2 {
+  color: whitesmoke;
+  font-size: 35px;
+  margin-top: -60px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  text-align: center;
+}
+.About .Acontent li {
+  display: inline;
+  color: whitesmoke;
+
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.service-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-cardbox {
+  width: 250px;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+
+.service-card {
+  width: 250px;
+  padding: 10px 5px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 0 0 40px rgb(40, 19, 4, 0.6);
+  border: 1px solid rgba(170, 66, 18, 0.6);
+  transition: all 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 0 40px rgba(170, 66, 18, 0.6);
+  transform: scale(1.02);
+}
+
+.service-card img {
+  width: 230px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* section 3 --popular choice */
 
 .sec3 {
-  padding: 7% 5%;
   text-align: center;
 }
 
@@ -318,14 +409,16 @@ nav {
 
 .footer {
   text-align: center;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   margin-top: 1px;
   height: 60px;
-  font-size: 14px;
+  font-size: 18px;
 
-  background-color: indianred;
+  background-color: rgb(255, 87, 87);
   color: rgb(43, 17, 17);
 }
 .footer p {
-  padding: 25px;
+  padding: 20px;
 }
+
+/* sec */
