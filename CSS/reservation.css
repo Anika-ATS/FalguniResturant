@@ -2,13 +2,13 @@
   margin: 0px;
   padding: 0px;
 
-  text-decoration: none;
-
-  max-width: 1400px;
-  /* overflow-x: hidden; */
+  box-sizing: border-box;
 }
 body {
-  background: linear-gradient(45deg, white 70%, rgb(277, 233, 209));
+  /* background: linear-gradient(45deg, white 70%, rgb(277, 233, 209)); */
+  background: url("../Images/bkk4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -22,16 +22,16 @@ nav {
 }
 
 .NAV-part-1 a {
-  color: rgb(255, 87, 87);
+  color: white;
   font-family: cursive;
   font-size: 18px;
   padding-right: 10px;
   transition: all 0.5s;
 }
 
-.NAV-part-1 a:hover {
+/* .NAV-part-1 a:hover {
   color: rgb(40, 19, 4);
-}
+} */
 
 .Nav-logo img {
   max-width: 650px;
@@ -45,10 +45,10 @@ nav {
   gap: 20px;
 }
 .search {
-  color: rgb(255, 87, 87);
+  color: white;
   font-size: 18px;
   padding-right: 10px;
-  border-bottom: 1px solid rgb(255, 87, 87);
+  border-bottom: 1px solid white;
   transition: all 0.5s;
 }
 
@@ -64,17 +64,17 @@ nav {
   transition: all 0.5s;
 }
 .Nav-part-2 .search input::placeholder {
-  color: rgb(255, 87, 87);
+  color: white;
   font-family: cursive;
 }
 
 .user i {
-  color: rgb(255, 87, 87);
+  color: white;
   padding: 5px;
   height: 20px;
 }
 .user-text {
-  color: rgb(255, 87, 87);
+  color: white;
   font-size: 20px;
   font-family: cursive;
   padding-right: 10px;
@@ -82,6 +82,53 @@ nav {
 }
 .user-text:hover {
   color: rgb(40, 19, 4);
+}
+
+/* booking */
+
+.booking-container {
+  display: flex;
+  min-height: 100vh;
+}
+.booking {
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, white -100%, transparent); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.booking form {
+  padding: 50px;
+  width: 60%;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgb(254, 233, 209, 0.5);
+}
+
+.booking form h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgb(43, 17, 17);
+  text-align: center;
+}
+
+.booking form div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking form input {
+  width: 50%;
+  padding: 15px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
 /* footer */
