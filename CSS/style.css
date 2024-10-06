@@ -295,6 +295,72 @@ nav {
   color: indianred;
 }
 
+/* Regular section */
+
+.Regularsec {
+  text-align: center;
+  overflow: hidden;
+  color: rgb(116, 71, 54);
+}
+
+.Regularsec h1 {
+  font-family: cursive;
+  font-size: 45px;
+  color: rgb(40, 19, 4);
+}
+
+/* Card container with sliding animation */
+.Regularsec .Regularsec-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide-left-right 10s linear infinite;
+}
+
+.Regularsec-cardbox {
+  display: inline-block;
+  border: 1px solid rgb(116, 71, 54);
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(254, 253, 209, 0.6);
+  transition: all 0.3s;
+}
+
+.Regularsec-card:hover {
+  box-shadow: 0 0 40px rgba(170, 66, 18, 0.6);
+  transform: scale(1.02);
+}
+
+.Regularsec-card img {
+  width: 200px;
+  height: 150px;
+  border-radius: 25px;
+  border: 1px solid rgb(116, 71, 54);
+}
+
+.Regularsec-card h4 {
+  text-align: center;
+  margin-top: 10px;
+  color: indianred;
+}
+
+/* Keyframes for sliding animation */
+@keyframes slide-left-right {
+  0% {
+    transform: translateX(-100%); /* Start outside the left */
+  }
+  100% {
+    transform: translateX(100%); /* End outside the right */
+  }
+}
+
 /* sec4 */
 .sec4 {
   text-align: center;
@@ -314,6 +380,84 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   width: 900px;
+}
+
+/* section Pastry */
+.sec2 {
+  padding: 3% 3%;
+  margin: 7% 0;
+}
+
+.About {
+  background-image: url(../Images/PastryBack.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  min-height: 350px;
+  width: 100%;
+  /* display: flex; */
+}
+
+.About .Menu-p img {
+  width: 350px;
+  height: 500px;
+  margin-right: 720px;
+
+  /* padding: 3% 3%; */
+}
+.Menu-p img {
+  border-radius: 20px;
+  margin-top: -250px;
+  border: 2px solid rgb(116, 71, 54);
+}
+
+.sec2 h1 {
+  font-size: 35px;
+  color: rgb(40, 19, 4);
+
+  padding-bottom: 32px;
+
+  margin: auto;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+.service-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-cardbox {
+  width: 300px;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+
+.service-card {
+  width: 160px;
+  height: 160px;
+
+  border-radius: 15px;
+
+  background-color: white;
+  box-shadow: 0 0 40px rgb(40, 19, 4, 0.6);
+  border: 1px solid rgba(170, 66, 18, 0.6);
+  transition: all 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 0 40px rgba(170, 66, 18, 0.6);
+  transform: scale(1.02);
+}
+
+.service-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
 }
 
 /* sec5 */
@@ -447,5 +591,3 @@ nav {
 .footer p {
   padding: 20px;
 }
-
-/* sec */

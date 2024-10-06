@@ -169,4 +169,10 @@ form {
   margin-top: 20px;
   text-align: center;
   font-size: 15px;
+  margin-top: 20px;
+}
+
+.loogin .signup span a {
+  color: black;
+  font-weight: 30;
 }
