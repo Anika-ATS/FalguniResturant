@@ -23,12 +23,10 @@ nav {
   width: 100%;
   height: 20vh;
 
-  /* background-color: rgb(255, 87, 87); */
   background-color: transparent;
 }
 
 .NAV-part-1 a {
-  /* background-color: rgb(116, 71, 54); */
   background-color: rgb(250, 219, 56);
   color: rgb(116, 71, 54);
   font-family: cursive;
@@ -98,16 +96,7 @@ nav {
   color: rgb(255, 87, 87);
 }
 
-/* section 1 */
-/* .sec1 {
-  background-image: url(../Images/Pastel\ Pink\ and\ Brown\ Modern\ Sale\ Food\ Banner.jpg);  height: 600px;
-  background-size: cover;
-  background-position: center;
-  background-position: center;
-} */
-
 .content-homepage {
-  /* position: absolute; */
   top: 10;
   left: 0;
   width: 100%;
@@ -272,7 +261,7 @@ nav {
   padding: 40px 20px;
   border-radius: 15px;
   box-shadow: 0 0 40px rgba(254, 253, 209, 0.6);
-  /* border: 1px solid rgba(170, 66, 18, 0.6); */
+
   transition: all 0.3s;
 }
 .card:hover {
@@ -296,6 +285,7 @@ nav {
 }
 
 /* Regular section */
+/* daily Dishes */
 
 .Regularsec {
   text-align: center;
@@ -309,7 +299,6 @@ nav {
   color: rgb(40, 19, 4);
 }
 
-/* Card container with sliding animation */
 .Regularsec .Regularsec-cards {
   display: flex;
   justify-content: space-evenly;
@@ -317,7 +306,7 @@ nav {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  animation: slide-left-right 10s linear infinite;
+  animation: slide-left-right 18s linear infinite;
 }
 
 .Regularsec-cardbox {
@@ -354,10 +343,10 @@ nav {
 /* Keyframes for sliding animation */
 @keyframes slide-left-right {
   0% {
-    transform: translateX(-100%); /* Start outside the left */
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%); /* End outside the right */
+    transform: translateX(100%);
   }
 }
 
@@ -368,7 +357,7 @@ nav {
 }
 
 .sec4 h1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: cursive;
   font-size: 60px;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -376,57 +365,57 @@ nav {
 }
 
 .sec4 .video-container {
-  padding: 70px 50px;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 900px;
+  border-radius: 35px;
+  width: 800px;
+  margin-left: 100px;
 }
 
 /* section Pastry */
-.sec2 {
+
+.Pastry-sec {
   padding: 3% 3%;
   margin: 7% 0;
 }
 
-.About {
+.PastryAbout {
   background-image: url(../Images/PastryBack.png);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   min-height: 350px;
-  width: 100%;
+  width: 90%;
+  margin-left: 50px;
+  /* padding: 10%; */
   /* display: flex; */
 }
 
-.About .Menu-p img {
-  width: 350px;
-  height: 500px;
-  margin-right: 720px;
-
-  /* padding: 3% 3%; */
+.PastryAbout .Menu-p img {
+  width: 390px;
+  height: 450px;
+  margin-left: 770px;
 }
 .Menu-p img {
   border-radius: 20px;
-  margin-top: -250px;
+  margin-top: -120px;
   border: 2px solid rgb(116, 71, 54);
 }
 
-.sec2 h1 {
-  font-size: 35px;
+.Pastry-sec h1 {
+  font-size: 55px;
   color: rgb(40, 19, 4);
 
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 
-  margin: auto;
+  margin-left: 90px;
 
   font-family: "Courier New", Courier, monospace;
 }
 
-.service-img {
+.Pastryservice-img {
   display: flex;
   justify-content: space-evenly;
 }
-.service-cardbox {
+.Pastryservice-cardbox {
   width: 300px;
   margin-top: -100px;
   display: flex;
@@ -435,7 +424,7 @@ nav {
   justify-content: space-evenly;
 }
 
-.service-card {
+.Pastryservice-card {
   width: 160px;
   height: 160px;
 
@@ -446,12 +435,12 @@ nav {
   border: 1px solid rgba(170, 66, 18, 0.6);
   transition: all 0.3s;
 }
-.service-card:hover {
+.Pastryservice-card:hover {
   box-shadow: 0 0 40px rgba(170, 66, 18, 0.6);
   transform: scale(1.02);
 }
 
-.service-card img {
+.Pastryservice-card img {
   width: 150px;
   height: 150px;
   border-radius: 20px;
@@ -590,4 +579,143 @@ nav {
 }
 .footer p {
   padding: 20px;
+}
+
+/*Mobile device  */
+
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  .bgimg {
+    padding: 6%;
+  }
+
+  .Nav-logo img {
+    max-width: 20%;
+    align-items: start;
+    margin-top: -45px;
+    height: auto;
+  }
+
+  .Nav-part-2 {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+    /* color: white; */
+  }
+
+  .search {
+    background-color: rgb(250, 219, 56);
+    color: rgb(116, 71, 54);
+    font-size: 28px;
+    padding-right: 24px;
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    transition: all 0.5s;
+  }
+
+  .Nav-part-2 .search input::placeholder {
+    color: rgb(116, 71, 54);
+  }
+
+  .content-homepage h1 {
+    font-size: 28px;
+    margin-top: 60px;
+  }
+
+  .content-homepage p {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+  .Acontent li {
+    margin-left: 15px;
+  }
+  .service-card {
+    width: 200px;
+
+    padding: 0px;
+    border-radius: 15px;
+
+    background-color: white;
+    box-shadow: 0 0 40px rgb(40, 19, 4, 0.6);
+    border: 1px solid rgba(170, 66, 18, 0.6);
+    transition: all 0.3s;
+  }
+  .service-img {
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 120px;
+
+    margin-left: 50px;
+  }
+
+  .service-card {
+    width: 230px;
+  }
+
+  .sec3 .cards {
+    flex-direction: column;
+  }
+
+  .sec4 .video-container {
+    margin-left: 0px;
+    width: 30%;
+  }
+  .PastryAbout {
+    margin-left: 25px;
+  }
+  .PastryAbout .Menu-p img {
+    width: 300px;
+    height: 400px;
+    margin-top: 220px;
+    margin-left: 25px;
+  }
+  .Menu-p img {
+    border-radius: 20px;
+
+    border: 2px solid rgb(116, 71, 54);
+  }
+
+  .Pastryservice-img {
+    flex-direction: column;
+    gap: 110px;
+    margin-top: 120px;
+    margin-left: 35px;
+  }
+
+  /* sec5 */
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter .image {
+    width: 450px;
+    margin-left: 330px;
+  }
+
+  .newsletter .content h2,
+  .newsletter .content h1 {
+    margin-left: 70px;
+  }
+
+  .newsletter .subscribe {
+    margin-left: 50px;
+
+    display: flex;
+
+    width: 70%;
+  }
+
+  .sec6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec6 img {
+    width: 100px;
+  }
 }
