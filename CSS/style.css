@@ -8,6 +8,13 @@
   /* overflow-x: hidden; */
 }
 
+.bgimg {
+  background-image: url(../Images/bgggg2.png);
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+}
 nav {
   display: flex;
 
@@ -15,19 +22,25 @@ nav {
   align-items: center;
   width: 100%;
   height: 20vh;
-  background-color: rgb(255, 87, 87);
+
+  /* background-color: rgb(255, 87, 87); */
+  background-color: transparent;
 }
 
 .NAV-part-1 a {
-  color: rgb(40, 19, 4);
+  /* background-color: rgb(116, 71, 54); */
+  background-color: rgb(250, 219, 56);
+  color: rgb(116, 71, 54);
   font-family: cursive;
   font-size: 18px;
-  padding-right: 10px;
+  border-radius: 10px;
+  padding: 6px;
+
   transition: all 0.5s;
 }
 
 .NAV-part-1 a:hover {
-  color: whitesmoke;
+  color: rgb(255, 87, 87);
 }
 
 .Nav-logo img {
@@ -42,9 +55,9 @@ nav {
   gap: 20px;
 }
 .search {
-  color: rgb(40, 19, 4);
+  color: rgb(250, 219, 56);
   font-size: 18px;
-  padding-right: 10px;
+  padding-right: 24px;
   border-bottom: 1px solid white;
   transition: all 0.5s;
 }
@@ -61,36 +74,40 @@ nav {
   transition: all 0.5s;
 }
 .Nav-part-2 .search input::placeholder {
-  color: whitesmoke;
+  color: rgb(250, 219, 56);
 }
-
+.user {
+  /* background-color: rgb(116, 71, 54); */
+  background-color: rgb(250, 219, 56);
+  border-radius: 18px;
+  /* padding: 20px; */
+}
 .user i {
-  color: rgb(40, 19, 4);
-  padding: 5px;
+  color: rgb(116, 71, 54);
+  padding: 10px;
   height: 20px;
 }
 .user-text {
-  color: rgb(40, 19, 4);
+  color: rgb(116, 71, 54);
   font-size: 20px;
   font-family: cursive;
-  padding-right: 10px;
+  padding: 10px;
   transition: all 0.5s;
 }
 .user-text:hover {
-  color: whitesmoke;
+  color: rgb(255, 87, 87);
 }
 
 /* section 1 */
-.sec1 {
-  background-image: url(../Images/Pastel\ Pink\ and\ Brown\ Modern\ Sale\ Food\ Banner.jpg);
-  height: 600px;
+/* .sec1 {
+  background-image: url(../Images/Pastel\ Pink\ and\ Brown\ Modern\ Sale\ Food\ Banner.jpg);  height: 600px;
   background-size: cover;
   background-position: center;
   background-position: center;
-}
+} */
 
 .content-homepage {
-  position: absolute;
+  /* position: absolute; */
   top: 10;
   left: 0;
   width: 100%;
@@ -102,36 +119,44 @@ nav {
 }
 
 .content-homepage h1 {
-  padding-left: 30px;
-  margin-top: 90px;
+  margin-top: 120px;
   font-family: cursive;
   color: rgb(40, 19, 4);
   font-size: 35px;
+  text-align: center;
 }
 .content-homepage p {
-  padding-left: 30px;
+  /* background-color: rgb(116, 71, 54); */
+  width: 560px;
+
+  border-radius: 18px;
+  margin: auto;
+  margin-top: 20px;
+  text-wrap: wrap;
+  padding: 10px;
   padding-top: 25px;
-  color: rgb(255, 87, 87);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: rgb(40, 19, 4);
+
+  font-family: cursive;
 }
 
 .content-homepage .btn {
+  border: 1px solid rgb(116, 71, 54);
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 30px;
-  margin-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: auto;
   width: 130px;
+  background-color: rgb(40, 19, 4);
+  color: rgb(250, 219, 56);
 
-  background-color: rgb(255, 87, 87);
-  color: white;
-  display: inline-flex;
   border-radius: 50px;
 }
 
 .btn:hover {
-  background-color: rgb(40, 19, 4);
+  background-color: white;
 
   transform: translateX(20px);
 }
@@ -414,8 +439,10 @@ nav {
   height: 60px;
   font-size: 18px;
 
-  background-color: rgb(255, 87, 87);
-  color: rgb(43, 17, 17);
+  /* background-color: rgb(255, 87, 87); */
+  background-color: rgb(116, 71, 54);
+  /* color: rgb(43, 17, 17); */
+  color: rgb(250, 219, 56);
 }
 .footer p {
   padding: 20px;
